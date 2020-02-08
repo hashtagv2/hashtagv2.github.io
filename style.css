@@ -10,6 +10,9 @@ body {
     font-size: 15px;
     font-weight: normal;
     color: hsl(0, 0%, 90%);
+    background: url("images/4.jpg") no-repeat;
+    background-size: cover;
+    
 }
 
 @font-face {
@@ -232,8 +235,8 @@ body {
 -----------------------------------------------------------*/
 .hero-content {
     padding: 220px 0;
-    background: url("images/4.jpg") no-repeat;
-    background-size: cover;
+    /*background: url("images/4.jpg") no-repeat;
+    background-size: cover;*/
 }
 
 .hero-content .entry-header {
@@ -814,8 +817,8 @@ body {
 .site-footer {
     position: relative;
     padding: 40px 0 30px;
-    background: url(images/4.jpg) no-repeat;
-    background-size: cover;
+    /*background: url(images/4.jpg) no-repeat;
+    background-size: cover;*/
 }
 
 .site-footer::before {
@@ -840,46 +843,12 @@ body {
     line-height: 1;
     margin-bottom: 0;
     text-align: center;
-    color: hsl(0, 0%, 100%);
+    color: hsla(0, 0%, 100%,1);
     mix-blend-mode: overlay;
     z-index: 2;
 }
 
-/*custom*/
 
-.sitex {
-    position: relative;
-    padding: 40px 0 30px;
-    
-    
-}
-
-.sitex::before {
-    position: absolute;
-    content: " ";
-    height: 100%;
-    width: 100%;
-    z-index: 3;
-    background: hsla(0, 0%, 5%, 0.7);
-    top: 0;
-    left: 0;
-}
-
-.sitex .footer-cover-title {
-    min-height: 480px;
-    width: 100%;
-}
-
-.sitex .footer-cover-title h2 {
-    font-size: 20vw;
-    font-weight: 700;
-    line-height: 1;
-    margin-bottom: 0;
-    text-align: center;
-    color: hsl(0, 0%, 100%);
-    mix-blend-mode: overlay;
-    z-index: 2;
-}
 
 /*------------------------------------------------------------*/
 

@@ -74,7 +74,7 @@ body {
 }
 
 .header-bar .site-branding a {
-    color: #d0f600;
+    color: hsl(0, 0%, 100%);
     text-decoration: none;
 }
 
@@ -181,7 +181,7 @@ body {
 
 .site-navigation ul li a {
     display: block;
-    color:#d0f600;
+    color: #fff;
     transition: all 0.35s;
     text-decoration: none;
     font-size: 14px;
@@ -226,7 +226,7 @@ body {
     }
 
     .site-navigation ul li a {
-        color: #d0f600;
+        color: #fff;
     }
 }
 
@@ -306,14 +306,14 @@ body {
 }
 
 /*------------------------------------------------------------
-## hero-content entry-footer
+## hero-content entry-mainhead
 ------------------------------------------------------------*/
-.hero-content .entry-footer {
+.hero-content .entry-mainhead {
     margin-top: 125px;
     text-align: center;
 }
 
-.hero-content .entry-footer .btn {
+.hero-content .entry-mainhead .btn {
     background: hsl(0, 0%, 100%);
     padding: 16px 40px;
     border-radius: 0;
@@ -322,7 +322,7 @@ body {
     font-weight: 600;
 }
 
-.hero-content .entry-footer a:hover, .hero-content .entry-footer .current {
+.hero-content .entry-mainhead a:hover, .hero-content .entry-mainhead .current {
     background: -webkit-linear-gradient(#00d0ff, #25ffbf);
     color: hsl(0, 0%, 0%);
 }
@@ -600,7 +600,7 @@ body {
     margin-top: 105px
 }
 
-.see-complete-lineup .entry-footer .btn {
+.see-complete-lineup .entry-mainhead .btn {
     padding: 15px 35px;
     border-radius: 0;
     margin-right: 20px;
@@ -608,7 +608,7 @@ body {
     font-weight: 500;
 }
 
-.see-complete-lineup .entry-footer a {
+.see-complete-lineup .entry-mainhead a {
     font-size: 14px;
     font-weight: 600;
     color: hsl(0, 0%, 100%);
@@ -812,16 +812,16 @@ body {
 }
 
 /*------------------------------------------------------------
-# site-footer
+# site-mainhead
 ------------------------------------------------------------*/
-.site-footer {
+.site-mainhead {
     position: relative;
     padding: 40px 0 30px;
     /*background: url(images/4.jpg) no-repeat;
     background-size: cover;*/
 }
 
-.site-footer::before {
+.site-mainhead::before {
     position: absolute;
     content: " ";
     height: 100%;
@@ -832,12 +832,12 @@ body {
     left: 0;
 }
 
-.site-footer .footer-cover-title {
+.site-mainhead .mainhead-cover-title {
     min-height: 480px;
     width: 100%;
 }
 
-.site-footer .footer-cover-title h2 {
+.site-mainhead .mainhead-cover-title h2 {
     font-size: 20vw;
     font-weight: 700;
     line-height: 1;
@@ -853,9 +853,9 @@ body {
 /*------------------------------------------------------------*/
 
 /*------------------------------------------------------------
-## .site-footer footer-content-wrapper
+## .site-mainhead mainhead-content-wrapper
 ------------------------------------------------------------*/
-.footer-content-wrapper {
+.mainhead-content-wrapper {
     position: absolute;
     width: 100%;
     height: auto;
@@ -866,16 +866,16 @@ body {
     text-align: center;
 }
 
-.footer-content-wrapper .flex {
+.mainhead-content-wrapper .flex {
     flex-direction: column;
 }
 
-.footer-content-wrapper .entry-title {
+.mainhead-content-wrapper .entry-title {
     text-align: center;
     margin-top: 25px;
 }
 
-.footer-content-wrapper .entry-title a {
+.mainhead-content-wrapper .entry-title a {
     font-size: 52px;
     font-weight: 700;
     color: hsl(0, 0%, 100%);
@@ -884,44 +884,44 @@ body {
 }
 
 @media screen and (min-width: 576px) {
-    .footer-content-wrapper .entry-title a {
+    .mainhead-content-wrapper .entry-title a {
         font-size: 100px;
     }
 }
 
-.footer-content-wrapper .entry-mail {
+.mainhead-content-wrapper .entry-mail {
     margin-top: 16px;
     font-size: 26px;
     font-weight: 700;
     color: hsl(0, 0%, 100%);
 }
 
-.footer-content-wrapper .entry-mail a {
+.mainhead-content-wrapper .entry-mail a {
     text-decoration: none;
     color: hsl(0, 0%, 100%);
 }
 
-.footer-content-wrapper .copyright-info {
+.mainhead-content-wrapper .copyright-info {
     margin-top: 20px;
     font-size: 12px;
     color: hsl(0, 0%, 100%);
 }
 
-.footer-content-wrapper .footer-social {
+.mainhead-content-wrapper .mainhead-social {
     margin-top: 32px;
 }
 
-.footer-content-wrapper .footer-social .flex {
+.mainhead-content-wrapper .mainhead-social .flex {
     flex-direction: row !important;
 }
 
-.footer-content-wrapper .footer-social ul {
+.mainhead-content-wrapper .mainhead-social ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.footer-content-wrapper .footer-social ul a {
+.mainhead-content-wrapper .mainhead-social ul a {
     padding: 5px 16px;
     font-size: 12px;
     color: hsl(0, 0%, 100%);
@@ -1139,14 +1139,14 @@ body {
     color: #fff;
 }
 
-.testimonial-content-wrap .entry-footer {
+.testimonial-content-wrap .entry-mainhead {
     margin-top: 40px;
     font-size: 14px;
     font-weight: 600;
     color: #fff;
 }
 
-.testimonial-content-wrap .entry-footer a {
+.testimonial-content-wrap .entry-mainhead a {
     color: #fff;
     text-decoration: none;
 }

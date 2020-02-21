@@ -326,7 +326,7 @@ section .section-title {
     text-align: left;
 }
 
-.social-icon a {
+a.social-icon{
     margin: 15px 0 0;
     display: inline-block;
     text-decoration: none;
@@ -335,7 +335,7 @@ section .section-title {
     padding: 5px;
     border: 1px solid #333;
 }
-.social-icon a:hover {
+a:hover .social-icon{
     text-decoration: none;
 
 }

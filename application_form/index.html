@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SPS School Of Practical Studies">
+    <meta name="author" content="Shabeersha">
+    <meta name="keywords" content="SPS School Of Practical Studies">
+
+    <!-- Title Page-->
+    <title> Register Form | SPS</title>
+
+    <!-- Icons font CSS-->
+
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/main.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="../style.css">
+
+
+    
+</head>
+
+<body style="color:black;">
+
+
+    <div class="page-xwrapper bg-light p-t-10  font-robo">
+        <div class="xwrapper xwrapper--w960">
+            <div class="xcard xcard-2">
+
+                <div class="xcard-body ">
+                    <h2 id="title" class="title">Registration</h2>
+                    <div id="success-msg" style="display: none">
+                        <div class="xcontainer gallery-container">
+
+                            <h3 class="h3">Congratulations! Successfully Registered.</h3>
+                        </div>
+                    </div>
+
+
+                            
+
+
+
+                    <form name="Register" id="form" target="_self" onsubmit="" action="" method="get" autocomplete="off" >
+                        <div class="input-group ">
+                            <input class="input--style-2 " type="text" placeholder="Full Name" name="entry.136051540" id="name" >
+                        </div>
+                         <div class="input-group">
+                            <input class="input--style-2" type="text" placeholder="Name of College / Organisation" name="entry.1603420295" id="college">
+                        </div>
+                         <div class="input-group">
+                            <input class="input--style-2" type="email" placeholder="Email" name="entry.380540953" id="email">
+                        </div>
+                        <div class="xrow xrow-space">
+
+                            <div class="xcol-2">
+                                   <div class="input-group">
+                                    <input class="input--style-2" type="tel" pattern="^\d{10}$" placeholder="Contact No(Whatsapp)" name="entry.1111722673" id="phone">
+                                </div>
+                            </div>
+                            <div class="xcol-2">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="entry.1843550213" id="item">
+                                            <option disabled="disabled" selected="selected">Select the Item</option>
+                                            <option value="CodeBuster">CodeBuster</option>
+                                            <option value="Diseño de Web">Diseño de Web</option>
+                                            <option value="Diseño de Graphico">Diseño de Graphico</option>
+                                            <option value="Soccer Fiesta">Soccer Fiesta</option>
+                                            <option value="Battle Ground">Battle Ground</option>
+                                            <option value="Enigma">Enigma</option>
+
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+       					<div class="input-group">
+                                    <input class="input--style-2" type="text" placeholder="Name of Your Course" name="entry.735875093" id="course">
+                        </div>
+                        <div class="p-t-30">
+                           <button name="submitHandler" class="xbtn xbtn--radius xbtn--green" type="submit">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/additional-methods.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/datepicker/moment.min.js"></script>
+    <script src="vendor/datepicker/daterangepicker.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+
+
+    <!-- Main JS-->
+    <script src="js/global.js"></script>
+<script type="text/javascript">
+
+
+
+        $(document).ready(function () {
+
+            $('form[id="form"]').validate({ // initialize the plugin
+                rules: {
+                    'entry.380540953': {
+                        required: true,
+                        email: true
+                    },
+                    'entry.136051540': {
+                        required: true,
+                        minlength: 5
+                    },
+                    'entry.1603420295':{
+                        required:true
+                    },
+                    'entry.1111722673':{
+                        required:true
+                    },
+                    'entry.735875093':{
+                        required:true
+                    },
+                    'entry.1843550213':{
+                        required:true
+                    }
+
+                },
+                submitHandler: function (form) {
+                    postToGoogle();
+                    return false;
+                }
+            });
+
+        });
+
+
+
+</script>
+    <script>
+        function postToGoogle() {
+            var field1 = $("#name").val();
+            var field2 = $("#college").val();
+            var field3 = $("#email").val();
+            var field4 = $("#phone").val();
+            var field5 = $("#course").val();
+            var field6= $("#item").val();
+           
+
+
+           
+
+
+
+
+
+            $.ajax({
+                url: "https://docs.google.com/forms/d/1CH2_59fF38V7R-AgwfL7H6GIeRdKvz3XCSxOhjnBpQg/formResponse?",
+                data: { "entry.136051540":field1,
+                    "entry.1603420295":field2,
+                    "entry.380540953":field3,
+                    "entry.1111722673":field4,
+                    "entry.735875093":field5,
+                    "entry.1843550213":field6,
+                },
+                    
+                type: "POST",
+                dataType: "xml",
+                success: function(d)
+                {
+                },
+                error: function(x, y, z)
+                {
+
+                    $('#success-msg').show();
+                    $('#form').hide();
+                    $('#title').hide();
+                    setTimeout(function(){
+            				window.location.href = '../index.html';}, 3000);
+
+                }
+            });
+            return false;
+        }
+    </script>
+
+
+
+</body>
+
+</html>
+
+
+

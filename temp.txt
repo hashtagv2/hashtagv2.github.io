@@ -1,0 +1,19 @@
+name:  name="entry.136051540"
+college: name="entry.1603420295"
+email: name="entry.380540953"
+mobile: name="entry.1111722673"
+course : name="entry.735875093"
+item : name="entry.1843550213"
+
+
+https://docs.google.com/forms/d/e/1FAIpQLSeo_jK8Jp7em4srK9D8DcpO198O5GecV7wbIGrmy9qnorkVvA
+
+	var field1 = $("#name").val();
+	var field2 = $("#college").val();
+	var field3 = $("#email").val();
+	var field4 = $("#phone").val();
+	var field5 = $("#course").val();
+	var field6= $("#item").val();
+           
+
+
